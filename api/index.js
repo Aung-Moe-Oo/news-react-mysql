@@ -6,6 +6,7 @@ import userRoutes from "./routes/users.js";
 import multer from "multer";
 
 const app = express();
+const port = process.env.PORT || 8800;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -31,7 +32,7 @@ app.use("/api/posts", postRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 
-app.listen(8800, () => {
+app.listen(port, () => {
   if (typeof window !== "undefined") {
     console.log("we are running on the client");
   } else {
