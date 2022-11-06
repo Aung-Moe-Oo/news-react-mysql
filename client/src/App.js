@@ -42,7 +42,11 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
-]);
+],
+  {
+    basename: "/",
+  }
+);
 
 function App() {
   return (
