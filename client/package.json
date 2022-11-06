@@ -1,5 +1,6 @@
 {
-  "name": "booking",
+  "homepage": "https://aungnewsmysql.vercel.app",
+  "name": "aungnewsmysql",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
